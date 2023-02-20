@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="wrapper">
+            <h1>Рассчитать кредит</h1>
+            <form action="#" class="form">
+                <div class="form__input-block">
+                    <label for="creditsum">Сумма кредита:</label>
+                    <input class="form__input-credit-sum" type="number" name="creditsum">
+                </div>
+                <div class="form__input-block">
+                    <label for="creditperiod">Срок кредита:</label>
+                    <input class="form__input-credit-period" type="number" name="creditperiod">
+                </div>
+                <div class="form__input-block">
+                    <label for="creditpercent">Процентная ставка в год:</label>
+                    <input class="form__input-credit-percent" type="number" name="creditpercent">
+                </div>
+                <div class="form__input-block">
+                    <label for="creditcalculation">Вид расчета</label>
+                    <select class="form__select" name="creditcalculation">
+                        <option value="ann" default selected>Аннуитетный</option>
+                        <option value="diff">Дифференцированный</option>
+                    </select>
+                </div>
+                <button class="form__btn" type="submit">Рассчитать</button>
+            </form>
+
+            <div class="result">
+                <h2>Результаты расчета</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Сумма кредита</th>
+                            <th>% ставка</th>
+                            <th>Ежемесечный платеж</th>
+                            <th>Переплата по кредиту</th>
+                            <th>Общая выплата</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
